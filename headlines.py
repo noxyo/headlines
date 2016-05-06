@@ -14,13 +14,10 @@ RSS_FEEDS = {'qdance': 'http://podcast.q-dance.nl/audio/q-dancepodcast.xml',
 @app.route("/")
 @app.route("/<publication>")
 
-#def get_news(publication):
 def get_news(publication='qdance'):
 	feed = feedparser.parse(RSS_FEEDS[publication])
 	first_article = feed['entries'] [0]
 	return render_template("home.html", articles=feed['entries'])
-		#article=first_article)
-	#title=first_article.get("title"),published=first_article.get("published"),summary=first_article.get("summary"))
 
 if __name__ == '__main__':
 	app.run(port=5000, debug=True)

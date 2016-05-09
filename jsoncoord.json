@@ -1,0 +1,36 @@
+{	"coord":{"lon":-8.42,"lat":41.55},
+	"weather":[
+		{
+		"id":501,
+		"main":"Rain",
+		"description":"moderate rain",	<=====
+		"icon":"10d"
+		}
+	],
+	"base":"cmc stations",
+	"main":{
+		"temp":10.83,					<=====
+		"pressure":984.3,
+		"humidity":100,
+		"temp_min":10.83,
+		"temp_max":10.83,
+		"sea_level":1014.44,
+		"grnd_level":984.3
+	},
+	"wind":{
+		"speed":1.26,
+		"deg":171.002
+		},
+	"rain":{"3h":5.5},
+	"clouds":{"all":92},
+	"dt":1462813160,
+	"sys":{
+		"message":0.0045,
+		"country":"PT",					<=====
+		"sunrise":1462771178,
+		"sunset":1462822870
+		},
+	"id":2742032,
+	"name":"Braga",     				<=====
+	"cod":200
+}
